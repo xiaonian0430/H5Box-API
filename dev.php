@@ -18,7 +18,7 @@ return [
             'reload_async'          => true,
             'max_wait_time'         => 600,
             'package_max_length'    => 50 *1024*1024,
-            'document_root' => EASYSWOOLE_ROOT.'/Static/',
+            'document_root' => EASYSWOOLE_ROOT.'/Static',
             'enable_static_handler' => true,
         ],
         'TASK'           => [
