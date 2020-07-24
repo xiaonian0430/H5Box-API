@@ -12,6 +12,7 @@ namespace App\HttpController;
 
 use EasySwoole\Http\Message\Status;
 use EasySwoole\EasySwoole\Config;
+use EasySwoole\Utility\SnowFlake;
 use App\HttpController\Base;
 
 
@@ -27,7 +28,7 @@ class Upload extends Base
 
         $instance = Config::getInstance();
         $fileHost="http://112.74.58.15:9501";
-        $uid = session_create_id();
+        $uid = 'file_'.SnowFlake::make(1,1);
         $data = [
             'file' => ''
         ];
