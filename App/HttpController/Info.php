@@ -5,7 +5,7 @@
 
  * @version: 1.0
  * @license: Apache Licence
- * @file: Upload.php
+ * @file: Info.php
  * @time: 2019-12-01 14:00
  */
 namespace App\HttpController;
@@ -17,7 +17,7 @@ use EasySwoole\Redis\Redis;
 use EasySwoole\Redis\Config\RedisConfig;
 
 
-class URL extends Base
+class Info extends Base
 {
     public function postUrl()
     {
